@@ -17,8 +17,8 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # Activate the virtual environment
-                python -m venv /home/dpatnaik/MLIP_Lab6/mlip
-                source /home/dpatnaik/MLIP_Lab6/mlip/bin/activate
+                python -m venv mlip
+                /home/dpatnaik/MLIP_Lab6/mlip/bin/activate
 
                 # Run pytest
                 pytest
@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'In this step, we deploy our porject'
+                echo 'In this step, we deploy our project'
                 echo 'Depending on the context, we may publish the project artifact or upload pickle files'
             }
         }
