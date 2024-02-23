@@ -12,8 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh '''
-                #!/bin/bash
+                sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # Activate the virtual environment
