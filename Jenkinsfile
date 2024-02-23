@@ -17,10 +17,11 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # Activate the virtual environment
+                python -m venv mlip
                 source /mlip/bin/activate
 
                 # Run pytest
-                pytest test_utility.py
+                pytest
 
                 echo 'pytest ran successfully'
                 '''
