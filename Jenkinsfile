@@ -18,7 +18,7 @@ pipeline {
 
                 # Activate the virtual environment
                 python -m venv mlip
-                source /mlip/bin/activate
+                source mlip/bin/activate
 
                 # Run pytest
                 pytest
