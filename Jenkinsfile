@@ -17,7 +17,7 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # Activate the virtual environment
-                sudo /home/dpatnaik/MLIP_Lab6/mlip/bin/activate
+                source /home/dpatnaik/MLIP_Lab6/mlip/bin/activate
 
                 # Run pytest
                 pytest
