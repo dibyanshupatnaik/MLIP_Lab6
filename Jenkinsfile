@@ -17,7 +17,7 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # Activate the virtual environment
-                python -m venv mlip
+                python -m venv /home/dpatnaik/MLIP_Lab6/mlip
                 source /home/dpatnaik/MLIP_Lab6/mlip/bin/activate
 
                 # Run pytest
