@@ -18,7 +18,7 @@ pipeline {
 
                 # Activate the virtual environment
                 python -m venv mlip
-                /home/dpatnaik/MLIP_Lab6/mlip/bin/activate
+                sudo /home/dpatnaik/MLIP_Lab6/mlip/bin/activate
 
                 # Run pytest
                 pytest
